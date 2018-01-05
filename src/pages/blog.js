@@ -1,19 +1,24 @@
 import React from 'react'
+import Link from 'gatsby-link'
 
 export default ({ data }) => {
   return (
     <div>
       <h1>Blog</h1>
-      <p>Where we write about what we're doing.</p>
+      <p>Where we write about what we do.</p>
       <p>We have {data.allMarkdownRemark.totalCount} posts so far.</p>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div 
           key={node.id} 
           style={{ borderBottom: '1px dotted magenta', marginTop: '1em' }}>
-          <h3>
-            {node.frontmatter.title}{" "}
-            <span style={{ color: '#a2a2a2' }}>— {node.frontmatter.date}</span>
-          </h3>
+          <Link
+            to={node.fields.slug}
+            style={{ textDecoration: 'none' }}>
+            <h3>
+              {node.frontmatter.title}{" "}
+              <span style={{ color: '#a2a2a2' }}>— {node.frontmatter.date}</span>
+            </h3>
+          </Link>
           <p>{node.excerpt}</p>
         </div>
       ))}
@@ -31,6 +36,9 @@ query IndexQuery {
         frontmatter {
           title
           date(formatString: "MMMM DD, YYYY")
+        }
+        fields {
+          slug
         }
         excerpt
       }
