@@ -4,6 +4,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -17,7 +18,14 @@ module.exports = {
         baseId: `appCFPbAUuYs9JPIv`,
         tableName: `Projects`,
         tableView: `Grid view`
-      }
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
     }
   ],
 }

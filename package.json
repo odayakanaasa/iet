@@ -9,6 +9,8 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-typography": "^1.7.10",
     "gatsby-source-airtable": "0.0.4",
+    "gatsby-source-filesystem": "^1.5.11",
+    "gatsby-transformer-remark": "^1.7.26",
     "typography-theme-bootstrap": "^0.16.7"
   },
   "keywords": [
