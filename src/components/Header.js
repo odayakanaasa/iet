@@ -1,17 +1,21 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+const liStyle = {
+  display: 'inline-block',
+  marginRight: '2em',
+  marginTop: '2em',
+}
+
 const Header = () => (
-  <div>
+  <div style={{ borderBottom: 'solid 1px #d2d2d2' }}>
     <div>
-      <h1>
-        <Link to="/">IET</Link>
-      </h1>
-      <ul>
-        <li><Link to="/about/">About</Link></li>
-        <li><Link to="/projects/">Projects</Link></li>
-        <li><Link to="/blog/">Blog</Link></li>
-        <li><Link to="/contact/">Contact</Link></li>
+      <ul style={{ listStyle: 'none' }}>
+        <li style={liStyle}><Link to="/"><strong>IET</strong></Link></li>
+        <li style={liStyle}><Link to="/about/">About</Link></li>
+        <li style={liStyle}><Link to="/projects/">Projects</Link></li>
+        <li style={liStyle}><Link to="/blog/">Blog</Link></li>
+        <li style={liStyle}><Link to="/contact/">Contact</Link></li>
       </ul>
     </div>
   </div>

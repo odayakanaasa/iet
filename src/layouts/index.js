@@ -6,7 +6,7 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div style={{ margin: 'auto 3em' }}>
     <Helmet
       title="IET | City of Detroit"
       meta={[
@@ -15,7 +15,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <div>
+    <div style={{ marginTop: '2em' }}>
       {children()}
     </div>
   </div>
