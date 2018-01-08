@@ -19,7 +19,7 @@ export default ({ data }) => {
           <li 
             key={i}
             style={{ backgroundColor: '#f1f1f1', marginRight: '1em', padding: '.5em', listStyle: 'none', display: 'inline-block' }}>
-            <Link to={`/tags/${tag}`} style={{ textDecoration: 'none' }}>{tag}</Link>
+            <Link to={`/tags/${tag}`}>{tag}</Link>
           </li>
         ))}
       </ul>

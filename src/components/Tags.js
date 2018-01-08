@@ -9,6 +9,7 @@ export default function Tags({ pathContext }) {
   const { posts, post, tag } = pathContext
 
   if (tag) {
+    // Subpage for single tag
     return (
       <div>
         <h1>Tags</h1>
@@ -17,7 +18,7 @@ export default function Tags({ pathContext }) {
           {post.map(({ i, frontmatter, fields }) => {
             return (
               <li key={i}>
-                <Link to={fields.slug} style={{ textDecoration: 'none' }}>
+                <Link to={fields.slug}>
                   <h3>{frontmatter.title}{" "}<span style={{ color: '#a2a2a2' }}>— {frontmatter.date}</span></h3>
                 </Link>
               </li>
@@ -30,6 +31,7 @@ export default function Tags({ pathContext }) {
   }
 
   return (
+    // All tags page
     <div>
       <h1>Tags</h1>
       <ul>
