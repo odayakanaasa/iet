@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default ({ data }) => {
-  console.log(data)
   const projects = data.allAirtable.edges
   const project = projects.map((p) => 
     <li key={p.node.id}>{p.node.Name}</li>

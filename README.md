@@ -16,6 +16,8 @@ Install Gatsby's command line tools globally:
 
 # Usage
 
+## Develop
+
 `gatsby develop` starts the development server. 
 
 Now your app is running and hot reloading at `localhost:8000`.
@@ -43,4 +45,25 @@ It queries the metadata you defined in `gatsby-config.js` and returns a data obj
     }
   }
 }
+```
+
+## Make a blog post
+
+We write blog posts in markdown and automatically generate pages from them using Gatsby's Node API.
+
+To publish a new post, simply create a .md file in `/src/posts/`. The file name will become it's URL slug, so use hyphens.
+
+Here's a basic template:
+
+```
+---
+title: "Blog Post #1"
+date: "2018-01-08"
+tags: ["tag", "another-tag"]
+---
+
+Body text starts here.
+
+Enter down to make a new paragraph.
+
 ```
