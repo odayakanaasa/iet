@@ -6,6 +6,7 @@ import Link from 'gatsby-link'
 
 export default ({ data }) => {
   const post = data.markdownRemark
+
   return (
     <div>
       <h1>Blog</h1>
@@ -18,10 +19,11 @@ export default ({ data }) => {
           <li 
             key={i}
             style={{ backgroundColor: '#f1f1f1', marginRight: '1em', padding: '.5em', listStyle: 'none', display: 'inline-block' }}>
-            {tag}
+            <Link to={`/tags/${tag}`} style={{ textDecoration: 'none' }}>{tag}</Link>
           </li>
         ))}
       </ul>
+      <Link to="/blog">Back to all blog posts</Link>
     </div>
   )
 }
