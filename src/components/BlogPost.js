@@ -10,7 +10,18 @@ export default ({ data }) => {
     <div>
       <h1>Blog</h1>
       <h2>{post.frontmatter.title}</h2>
+      <h4>{post.frontmatter.date}</h4>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <br />
+      <ul>
+        {post.frontmatter.tags.map((tag, i) => (
+          <li 
+            key={i}
+            style={{ backgroundColor: '#f1f1f1', marginRight: '1em', padding: '.5em', listStyle: 'none', display: 'inline-block' }}>
+            {tag}
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
@@ -21,6 +32,8 @@ query BlogPostQuery($slug: String!) {
     html
     frontmatter {
       title
+      date(formatString: "MMMM DD, YYYY")
+      tags
     }
   }
 }

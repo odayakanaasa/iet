@@ -1,6 +1,7 @@
 ---
 title: "Hello, world"
 date: "2018-01-05"
+tags: ["open data", "reactjs", "ddot"]
 ---
 
 Our first blog post to introduce ourselves.

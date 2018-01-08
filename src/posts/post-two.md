@@ -1,6 +1,7 @@
 ---
 title: "More words"
 date: "2018-01-08"
+tags: ["open data", "gis", "python"]
 ---
 
 A second post.

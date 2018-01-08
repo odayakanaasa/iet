@@ -20,6 +20,15 @@ export default ({ data }) => {
             </h3>
           </Link>
           <p>{node.excerpt}</p>
+          <ul>
+            {node.frontmatter.tags.map((tag, i) => (
+                <li 
+                  key={i}
+                  style={{ backgroundColor: '#f1f1f1', marginRight: '1em', padding: '.5em', listStyle: 'none', display: 'inline-block' }}>
+                  {tag}
+                </li>
+            ))}
+          </ul>
         </div>
       ))}
     </div>
@@ -36,6 +45,7 @@ query IndexQuery {
         frontmatter {
           title
           date(formatString: "MMMM DD, YYYY")
+          tags
         }
         fields {
           slug
@@ -45,4 +55,4 @@ query IndexQuery {
     }
   }
 }
-`;
+`

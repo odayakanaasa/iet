@@ -59,6 +59,7 @@ Here's a basic template:
 ---
 title: "Blog Post #1"
 date: "2018-01-08"
+tags: ["tag", "another tag"]
 ---
 
 Body text starts here.
