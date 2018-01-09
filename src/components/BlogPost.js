@@ -8,10 +8,9 @@ export default ({ data }) => {
   const post = data.markdownRemark
 
   return (
-    <div>
-      <h1>Blog</h1>
-      <h2>{post.frontmatter.title}</h2>
-      <h4>{post.frontmatter.date}</h4>
+    <div style={{ maxWidth: '800px' }}>
+      <h1>{post.frontmatter.title}</h1>
+      <h2><span style={{ color: '#a2a2a2'}}>— {post.frontmatter.date}</span></h2>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <br />
       <ul>
