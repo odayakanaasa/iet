@@ -8,8 +8,9 @@ tags: ["open-data", "open-data-changelog"]
 
 ## new datasets
 
-- 2017 Wayne County Tax Foreclosure Auction results: https://data.detroitmi.gov/Property-Parcels/Wayne-County-Tax-Auction-Results-2017-/gnh3-c8fn
+- 2017 Wayne County Tax Foreclosure Auction results for properties in Detroit: https://data.detroitmi.gov/d/gnh3-c8fn
 
 ## existing datasets
 
-- Project Greenlight is now updating *daily*: https://data.detroitmi.gov/Public-Safety/Project-Greenlight-Locations/vrh6-6pvj
+- Project Greenlight is now updating *daily*: https://data.detroitmi.gov/d/vrh6-6pvj
+- DFD Fire Incidents now include incidents through 12/30/2017: https://data.detroitmi.gov/d/x6ys-22yr
