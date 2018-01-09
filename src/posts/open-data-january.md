@@ -12,5 +12,6 @@ tags: ["open-data", "open-data-changelog"]
 
 ## existing datasets
 
-- Project Greenlight is now updating *daily*: https://data.detroitmi.gov/d/vrh6-6pvj
+- Project Greenlight is now updating __daily__: https://data.detroitmi.gov/d/vrh6-6pvj
+- Property Sale History is now updating __daily__: https://data.detroitmi.gov/d/xbvp-4is5
 - DFD Fire Incidents now include incidents through 12/30/2017: https://data.detroitmi.gov/d/x6ys-22yr
