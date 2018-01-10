@@ -9,6 +9,7 @@ tags: ["open-data", "open-data-changelog"]
 ## new datasets
 
 - 2017 Wayne County Tax Foreclosure Auction results for properties in Detroit: https://data.detroitmi.gov/d/gnh3-c8fn
+- Right of Way permits issued by BSEED: https://data.detroitmi.gov/d/rj7w-r8ts
 
 ## existing datasets
 
