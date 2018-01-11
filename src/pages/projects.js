@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectBox from '../components/ProjectBox'
 
 export default ({ data }) => {
   const projects = data.allAirtable.edges
@@ -7,34 +8,11 @@ export default ({ data }) => {
     <div>
       <h1>Projects</h1>
       <p>What we work on:</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th>Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          {projects.map(({ node }, i) =>
-            <tr key={i}>
-              <td>
-                {node.Name}
-              </td>
-              <td>
-                {node.Description}
-              </td>
-              <td>
-                {node.Status}
-              </td>
-              <td>
-                <a href={node.GitHub}>{node.GitHub}</a>
-              </td>
-            </tr>
-          )}
-        </tbody>
-      </table>
+      <div style={{display: 'flex', flexWrap: 'wrap'}}>
+        {projects.map(({ node }, i) =>
+          <ProjectBox key={i} project={node} />
+        )}
+      </div>
     </div>
   )
 }
@@ -50,6 +28,7 @@ query ProjectsQuery {
         Status
         Type
         GitHub
+        Website
       }
     }
   }
