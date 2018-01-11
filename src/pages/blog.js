@@ -5,8 +5,6 @@ export default ({ data }) => {
   return (
     <div>
       <h1>Blog</h1>
-      <p>Where we write about what we do.</p>
-      <p>{data.allMarkdownRemark.totalCount} post{data.allMarkdownRemark.totalCount === 1 ? "" : "s"}:</p>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div 
           key={node.id} 

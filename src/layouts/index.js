@@ -4,9 +4,21 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
+
+const body = {
+  display: 'flex',
+  flexDirection: 'column',
+  minHeight: '100vh',
+}
+
+const main = {
+  flex: '1 0 auto',
+  margin: '2.5em',
+}
 
 const TemplateWrapper = ({ children }) => (
-  <div style={{ margin: 'auto 3em' }}>
+  <div style={body}>
     <Helmet
       title="IET | City of Detroit"
       meta={[
@@ -15,9 +27,10 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <div style={{ marginTop: '2em' }}>
+    <div style={main}>
       {children()}
     </div>
+    <Footer />
   </div>
 )
 
