@@ -4,6 +4,14 @@ import Link from 'gatsby-link'
 // Template component for auto-generated blog post pages
 // Make a post by adding a new markdown file in '/posts'
 
+const tagsStyle = {
+  backgroundColor: '#eee', 
+  marginRight: '1em', 
+  padding: '.5em', 
+  listStyle: 'none', 
+  display: 'inline-block',
+}
+
 export default ({ data }) => {
   const post = data.markdownRemark
 
@@ -17,7 +25,7 @@ export default ({ data }) => {
         {post.frontmatter.tags.map((tag, i) => (
           <li 
             key={i}
-            style={{ backgroundColor: '#eee', marginRight: '1em', padding: '.5em', listStyle: 'none', display: 'inline-block' }}>
+            style={tagsStyle}>
             <Link to={`/tags/${tag}`}>{tag}</Link>
           </li>
         ))}
