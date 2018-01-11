@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import TagsList from '../components/TagsList'
+
 export default ({ data }) => {
   return (
     <div>
@@ -17,15 +19,7 @@ export default ({ data }) => {
             </h3>
           </Link>
           <p>{node.excerpt}</p>
-          <ul>
-            {node.frontmatter.tags.map((tag, i) => (
-                <li 
-                  key={i}
-                  style={{ backgroundColor: '#eee', marginRight: '1em', padding: '.5em', listStyle: 'none', display: 'inline-block' }}>
-                  <Link to={`/tags/${tag}`}>{tag}</Link>
-                </li>
-            ))}
-          </ul>
+          <TagsList tags={node.frontmatter.tags} />
         </div>
       ))}
     </div>

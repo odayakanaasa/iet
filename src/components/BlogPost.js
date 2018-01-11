@@ -1,16 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import TagsList from './TagsList'
+
 // Template component for auto-generated blog post pages
 // Make a post by adding a new markdown file in '/posts'
-
-const tagsStyle = {
-  backgroundColor: '#eee', 
-  marginRight: '1em', 
-  padding: '.5em', 
-  listStyle: 'none', 
-  display: 'inline-block',
-}
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -21,15 +15,7 @@ export default ({ data }) => {
       <h2><span style={{ color: '#aaa'}}>— {post.frontmatter.date}</span></h2>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <br />
-      <ul>
-        {post.frontmatter.tags.map((tag, i) => (
-          <li 
-            key={i}
-            style={tagsStyle}>
-            <Link to={`/tags/${tag}`}>{tag}</Link>
-          </li>
-        ))}
-      </ul>
+      <TagsList tags={data.markdownRemark.frontmatter.tags} />
       <Link to="/blog">Back to all blog posts</Link>
     </div>
   )
