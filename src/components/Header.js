@@ -8,7 +8,7 @@ const liStyle = {
 }
 
 const Header = () => (
-  <div style={{ borderBottom: 'solid 1.5px #c2c2c2' }}>
+  <div style={{ borderBottom: 'solid 3px teal' }}>
     <div>
       <ul style={{ listStyle: 'none' }}>
         <li style={liStyle}><Link to="/"><strong>IET</strong></Link></li>

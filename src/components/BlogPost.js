@@ -10,14 +10,14 @@ export default ({ data }) => {
   return (
     <div style={{ maxWidth: '800px' }}>
       <h1>{post.frontmatter.title}</h1>
-      <h2><span style={{ color: '#a2a2a2'}}>— {post.frontmatter.date}</span></h2>
+      <h2><span style={{ color: '#aaa'}}>— {post.frontmatter.date}</span></h2>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <br />
       <ul>
         {post.frontmatter.tags.map((tag, i) => (
           <li 
             key={i}
-            style={{ backgroundColor: '#f1f1f1', marginRight: '1em', padding: '.5em', listStyle: 'none', display: 'inline-block' }}>
+            style={{ backgroundColor: '#eee', marginRight: '1em', padding: '.5em', listStyle: 'none', display: 'inline-block' }}>
             <Link to={`/tags/${tag}`}>{tag}</Link>
           </li>
         ))}

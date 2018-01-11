@@ -1,9 +1,11 @@
 import React from 'react'
+import ietLogo from '../img/iet-logo.svg'
 
 const IndexPage = () => (
-  <div>
-    <h1>Homepage</h1>
-    <p>This is where we tell you about what we do.</p>
+  <div style={{ fontSize: '1.5em' }}>
+    <h1>Office of Innovation & Emerging Technology</h1>
+    <img src={ietLogo} alt="iet" style={{ float: 'right', height: '12em' }} />
+    <p>We build web apps at the City of Detroit.</p>
   </div>
 )
 

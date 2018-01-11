@@ -10,12 +10,12 @@ export default ({ data }) => {
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div 
           key={node.id} 
-          style={{ borderBottom: '1px dotted magenta', marginTop: '1em' }}>
+          style={{ borderBottom: '1px dotted #aaa', marginTop: '1em' }}>
           <Link
             to={node.fields.slug}>
             <h3>
               {node.frontmatter.title}{" "}
-              <span style={{ color: '#a2a2a2' }}>— {node.frontmatter.date}</span>
+              <span style={{ color: '#aaa' }}>— {node.frontmatter.date}</span>
             </h3>
           </Link>
           <p>{node.excerpt}</p>
@@ -23,7 +23,7 @@ export default ({ data }) => {
             {node.frontmatter.tags.map((tag, i) => (
                 <li 
                   key={i}
-                  style={{ backgroundColor: '#f1f1f1', marginRight: '1em', padding: '.5em', listStyle: 'none', display: 'inline-block' }}>
+                  style={{ backgroundColor: '#eee', marginRight: '1em', padding: '.5em', listStyle: 'none', display: 'inline-block' }}>
                   <Link to={`/tags/${tag}`}>{tag}</Link>
                 </li>
             ))}
