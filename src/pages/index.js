@@ -31,7 +31,7 @@ export default IndexPage
 
 const query = graphql`
 query FeaturesProjectsQuery {
-  allAirtable(sort: { fields: [Status], order: ASC }, limit: 3) {
+  allAirtable(sort: { fields: [Status], order: ASC }, limit: 3, filter: { Featured: { eq: true } }) {
     edges {
       node {
         id
