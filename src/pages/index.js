@@ -29,7 +29,7 @@ IndexPage.propTypes = {
 
 export default IndexPage
 
-const query = graphql`
+export const query = graphql`
 query FeaturesProjectsQuery {
   allAirtable(sort: { fields: [Status], order: ASC }, limit: 3, filter: { Featured: { eq: true } }) {
     edges {
