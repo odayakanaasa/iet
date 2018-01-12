@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
 
 const liStyle = {
   backgroundColor: '#eee', 
@@ -18,5 +19,9 @@ const TagsList = ({ tags }) => (
     ))}
   </ul>
 )
+
+TagsList.propTypes = {
+  tags: PropTypes.array,
+}
 
 export default TagsList

@@ -1,21 +1,25 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import ProjectBox from '../components/ProjectBox'
 
-export default ({ data }) => {
-  const projects = data.allAirtable.edges
-
-  return (
-    <div>
-      <h1>Projects</h1>
-      <p>What we work on:</p>
-      <div style={{display: 'flex', flexWrap: 'wrap'}}>
-        {projects.map(({ node }, i) =>
-          <ProjectBox key={i} project={node} />
-        )}
-      </div>
+const Projects = ({ data }) => (
+  <div>
+    <h1>Projects</h1>
+    <p>What we work on:</p>
+    <div style={{display: 'flex', flexWrap: 'wrap'}}>
+      {data.allAirtable.edges.map(({ node }, i) =>
+        <ProjectBox key={i} project={node} />
+      )}
     </div>
-  )
+  </div>
+)
+
+Projects.propTypes = {
+  data: PropTypes.object,
 }
+
+export default Projects
 
 export const query = graphql`
 query ProjectsQuery {

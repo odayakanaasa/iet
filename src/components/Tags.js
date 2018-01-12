@@ -1,15 +1,16 @@
-import React from "react"
-import Link from "gatsby-link"
+import React from 'react'
+import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
 import _ from 'lodash'
 
 // Template component for tags pages
 // Add tags to the frontmatter in markdown blog posts
 
-export default function Tags({ pathContext }) {
+const Tags = ({ pathContext }) => {
   const { posts, post, tag } = pathContext
 
+  // Subpage for single tag
   if (tag) {
-    // Subpage for single tag
     return (
       <div>
         <h1>Tags</h1>
@@ -30,8 +31,8 @@ export default function Tags({ pathContext }) {
     )
   }
 
+  // All tags page
   return (
-    // All tags page
     <div>
       <h1>Tags</h1>
       <ul>
@@ -47,3 +48,9 @@ export default function Tags({ pathContext }) {
     </div>
   )
 }
+
+Tags.propTypes = {
+  pathContext: PropTypes.object,
+}
+
+export default Tags

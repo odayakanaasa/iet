@@ -1,11 +1,13 @@
-import React from 'react';
-import github from '../img/github-circle.svg';
-import link from '../img/open-in-new.svg';
+import React from 'react'
+import PropTypes from 'prop-types'
+
+import github from '../img/github-circle.svg'
+import link from '../img/open-in-new.svg'
 
 const borderColors = {
     'Development': 'rgba(248, 255, 50, 0.75)',
     'Waiting to launch': 'rgba(255, 159, 5, 0.75)',
-    'Production': 'rgba(29, 155, 52, 0.75)'
+    'Production': 'rgba(29, 155, 52, 0.75)',
 }
 
 const boxStyle = {
@@ -13,15 +15,15 @@ const boxStyle = {
     width: '275px', 
     margin: '.5em', 
     padding: '.5em', 
-    backgroundColor: '#eee'
+    backgroundColor: '#eee',
 }
 
 const iconStyle = {
     width: '25px',
-    marginRight: '.25em'
+    marginRight: '.25em',
 }
 
-const ProjectBox = ( {project} ) => (
+const ProjectBox = ({ project }) => (
     <div style={{...boxStyle, borderLeft: `.5em solid ${borderColors[project.Status]}`}}>
         <h4 style={{marginBottom: '.5em'}}>{project.Name}</h4>
         <p style={{marginBottom: '.25em'}}>
@@ -33,4 +35,8 @@ const ProjectBox = ( {project} ) => (
     </div>
 )
 
-export default ProjectBox;
+ProjectBox.propTypes = {
+    project: PropTypes.object,
+}
+
+export default ProjectBox

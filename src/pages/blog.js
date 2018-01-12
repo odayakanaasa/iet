@@ -1,30 +1,25 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
 
-import TagsList from '../components/TagsList'
+import BlogSnippet from '../components/BlogSnippet'
 
-export default ({ data }) => {
-  return (
-    <div>
-      <h1>Blog</h1>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div 
-          key={node.id} 
-          style={{ borderBottom: '1px dotted #aaa', marginTop: '1em' }}>
-          <Link
-            to={node.fields.slug}>
-            <h3>
-              {node.frontmatter.title}{" "}
-              <span style={{ color: '#aaa' }}>— {node.frontmatter.date}</span>
-            </h3>
-          </Link>
-          <p>{node.excerpt}</p>
-          <TagsList tags={node.frontmatter.tags} />
-        </div>
-      ))}
-    </div>
-  )
+const Blog = ({ data }) => (
+  <div>
+    <h1>Blog</h1>
+    {data.allMarkdownRemark.edges.map(({ node }, i) => (
+      <div key={i}>
+        <BlogSnippet node={node} />
+      </div>
+    ))}
+  </div>
+)
+
+Blog.propTypes = {
+  data: PropTypes.object,
 }
+
+export default Blog
 
 export const query = graphql`
 query IndexQuery {

@@ -1,8 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import ietLogo from '../img/iet-logo.svg'
 
-import FeaturedProjects from '../components/FeaturedProjects';
-import LatestBlogs from '../components/LatestBlogs';
+import FeaturedProjects from '../components/FeaturedProjects'
+import LatestBlogs from '../components/LatestBlogs'
 
 const IndexPage = ({ data }) => (
   <div>
@@ -21,9 +23,13 @@ const IndexPage = ({ data }) => (
   </div>
 )
 
+IndexPage.propTypes = {
+  data: PropTypes.object,
+}
+
 export default IndexPage
 
-export const query = graphql`
+const query = graphql`
 query FeaturesProjectsQuery {
   allAirtable(sort: { fields: [Status], order: ASC }, limit: 3) {
     edges {

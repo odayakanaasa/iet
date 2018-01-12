@@ -1,12 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
 
 import TagsList from './TagsList'
 
 // Template component for auto-generated blog post pages
 // Make a post by adding a new markdown file in '/posts'
 
-export default ({ data }) => {
+const BlogPost = ({ data }) => {
   const post = data.markdownRemark
 
   return (
@@ -15,11 +16,17 @@ export default ({ data }) => {
       <h2><span style={{ color: '#aaa'}}>— {post.frontmatter.date}</span></h2>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <br />
-      <TagsList tags={data.markdownRemark.frontmatter.tags} />
+      <TagsList tags={post.frontmatter.tags} />
       <Link to="/blog">Back to all blog posts</Link>
     </div>
   )
 }
+
+BlogPost.propTypes = {
+  data: PropTypes.object,
+}
+
+export default BlogPost
 
 export const query = graphql`
 query BlogPostQuery($slug: String!) {
