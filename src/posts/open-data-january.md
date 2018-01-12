@@ -14,6 +14,8 @@ tags: ["open-data", "open-data-changelog"]
 
 ### Existing datasets
 
-- Project Greenlight is now updating __daily__: https://data.detroitmi.gov/d/vrh6-6pvj
+- Project Green Light Locations: https://data.detroitmi.gov/d/vrh6-6pvj
+    - is now updating __daily__
+    - and includes the "Live Date", which is the date the business became a Green Light location.
 - Property Sale History is now updating __daily__: https://data.detroitmi.gov/d/xbvp-4is5
 - DFD Fire Incidents now include incidents through 12/30/2017: https://data.detroitmi.gov/d/x6ys-22yr
