@@ -11,6 +11,7 @@ tags: ["open-data", "open-data-changelog"]
 - 2017 Wayne County Tax Foreclosure Auction results for properties in Detroit: https://data.detroitmi.gov/d/gnh3-c8fn
 - Right of Way permits issued by BSEED: https://data.detroitmi.gov/d/rj7w-r8ts
 - Locations of kiosks to pay DWSD, DTE, City of Detroit Property Tax, and Wayne County Treasurer bills: https://data.detroitmi.gov/d/eey7-d4dx
+- Detroit Land Bank Authority Property Inventory: https://data.detroitmi.gov/d/vsin-ur7i
 
 ### Existing datasets
 
