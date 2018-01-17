@@ -24,7 +24,7 @@ const iconStyle = {
 }
 
 const ProjectBox = ({ project }) => (
-    <div style={{...boxStyle, borderLeft: `.5em solid ${borderColors[project.Status]}`}}>
+    <div style={{ ...boxStyle, borderLeft: `.5em solid ${borderColors[project.Status]}` }}>
         <h4 style={{marginBottom: '.5em'}}>{project.Name}</h4>
         <p style={{marginBottom: '.25em'}}>
             {project.Website ? <a href={project.Website}><img src={link} style={iconStyle} /></a> : ''}

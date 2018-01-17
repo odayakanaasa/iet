@@ -6,7 +6,7 @@ import TagsList from './TagsList'
 
 const containerStyle = {
   padding: '10px',
-  borderLeft: 'solid .5em teal',
+  borderLeft: 'solid .25em #333',
   fontSize: '1em',
 }
 
@@ -20,7 +20,7 @@ const snippetStyle = {
 const LatestBlogs = ({ blogs }) => (
   <div style={containerStyle}>
     <h2>Recent blog posts:</h2>
-    <div style={{display: 'flex', flexWrap: 'wrap'}}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', }}>
       {blogs.map(({ node }, i) =>
         <div key={i} style={snippetStyle}>
           <Link to={node.fields.slug}>

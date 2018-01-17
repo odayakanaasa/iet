@@ -10,7 +10,6 @@ const footerStyle = {
   justifyContent: 'space-around',
   alignItems: 'center',
   flexDirection: 'row',
-  paddingRight: '2em',
 }
 
 const Footer = () => (
