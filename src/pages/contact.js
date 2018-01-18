@@ -6,10 +6,12 @@ const Contact = () => (
     <p>Let's work together.</p>
     <p>Say hello by email at <a href="mailto:iet@detroitmi.gov">iet@detroitmi.gov</a>.</p>
     <p>You can also find us on <a href="https://github.com/cityofdetroit">Github</a> or in-person at:</p>
-    <p>Department of Innovation & Technology
-      <br />Coleman A. Young Municipal Building
-      <br />2 Woodward Avenue <span>—</span> Suite 1212
-      <br />Detroit, MI 48226</p>
+    <div style={{ borderLeft: 'solid .25em #333', paddingLeft: '.5em', }}>
+      <p>Department of Innovation & Technology
+        <br />Coleman A. Young Municipal Building
+        <br />2 Woodward Avenue — Suite 1212
+        <br />Detroit, MI 48226</p>
+    </div>
   </div>
 )
 

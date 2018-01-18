@@ -14,7 +14,7 @@ const body = {
 
 const main = {
   flex: '1 0 auto',
-  margin: '2.5em',
+  margin: '2em',
 }
 
 const TemplateWrapper = ({ children }) => (

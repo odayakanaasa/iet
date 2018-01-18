@@ -5,8 +5,8 @@ import PropTypes from 'prop-types'
 import ProjectBox from './ProjectBox'
 
 const containerStyle = {
-  padding: '10px',
-  borderLeft: 'solid .5em teal',
+  paddingLeft: '1em',
+  borderLeft: 'solid .25em #333',
   fontSize: '1em',
 }
 
