@@ -39,10 +39,10 @@ const About = ({ data }) => {
         sunlighting a new type of City data and sometimes it means building web applications that help people communicate with the City in a new way. 
         In any case, our projects aim to simplify internal work flows and make data more accessible to residents.</p>
       <p>We value working in the open and in iterations. We approach projects by identifying a problem, developing prototypes, testing 
-        with users first-hand, and evaluating what makes a solution impactful. We bring a fresh toolkit of open-source libraries and softwares 
+        with users first-hand, and evaluating what makes a solution impactful (or not). We bring a fresh toolkit of open-source libraries and softwares 
         to interact with the larger ecosystem of enterprise systems traditionally used throughout the City. All of our code is on <a href="https://github.com/cityofdetroit">Github</a>.</p>
-      <p>Have an idea, project pitch, or just want to say hello? 
-        Get in touch by email at <a href="mailto:iet@detroitmi.gov">iet@detroitmi.gov</a>.</p>
+      <p>Have an idea, project pitch, or just want to say hello?
+        Email us at <a href="mailto:iet@detroitmi.gov">iet@detroitmi.gov</a>.</p>
       <h3>Our team</h3>
       <div style={{ display: 'flex', flexWrap: 'wrap', marginBottom: '1em', }}>
         {us.map((you, i) => (

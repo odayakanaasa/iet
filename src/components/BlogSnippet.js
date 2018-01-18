@@ -6,7 +6,7 @@ import TagsList from './TagsList'
 
 const containerStyle = {
   marginTop: '1em',
-  padding: '10px',
+  paddingLeft: '1em',
   borderLeft: '.25em solid magenta',
 }
 
