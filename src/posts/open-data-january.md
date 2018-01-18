@@ -6,6 +6,18 @@ tags: ["open-data", "open-data-changelog"]
 
 ## January 2018
 
+Since this is our first changelog, let's define what we mean by *open data*. 
+
+Open data refers to datasets published on the City of Detroit's open data portal at [data.detroitmi.gov](https://data.detroitmi.gov/). All datasets on the open data portal are made available for free under a Public Domain license. 
+
+Each dataset can be accessed in a variety of formats. You can:
+- view, filter and search data tables online
+- export Excel-compatible flat files
+- export GIS-compatible shapefiles
+- connect to an [API endpoint](https://dev.socrata.com/?ref=Detroit)
+
+We'll always include direct links to the specific datasets we mention in these changelogs.
+
 ### New datasets
 
 - 2017 Wayne County Tax Foreclosure Auction results for properties in Detroit: https://data.detroitmi.gov/d/gnh3-c8fn
