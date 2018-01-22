@@ -33,3 +33,4 @@ We'll always include direct links to the specific datasets we mention in these c
 - Property Sale History is now updating __daily__: https://data.detroitmi.gov/d/xbvp-4is5
 - DFD Fire Incidents now include incidents through 12/30/2017: https://data.detroitmi.gov/d/x6ys-22yr
 - Demolition-related datasets have improved metadata, including more consistent descriptions, titles, and tags. Now, if you search "demo", you'll properly see these results: https://data.detroitmi.gov/browse?q=demo&sortBy=relevance
+- Removed an outdated, broken external dataset link (uksg-2hrt) for Detroit Property Ownership Information. If you're searching for property info, use Parcel Points Ownership instead: https://data.detroitmi.gov/Property-Parcels/d/dxgi-9s8s
