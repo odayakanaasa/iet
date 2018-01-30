@@ -42,6 +42,7 @@ query ProjectsQuery {
         Type
         GitHub
         Website
+        Tools
       }
     }
   }

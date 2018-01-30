@@ -41,6 +41,7 @@ query FeaturedContentQuery {
         Type
         GitHub
         Website
+        Tools
       }
     }
   },

@@ -3,23 +3,27 @@ import Link from 'gatsby-link'
 
 const headerStyle = {
   height: '5em',
-  borderBottom: 'solid .25em #333',
+  borderBottom: 'solid .25em #123e3f',
   display: 'flex',
   justifyContent: 'flex-start',
   alignItems: 'center',
   alignContent: 'center',
-  flexDirection: 'row',
+  flexFlow: 'row-wrap',
   paddingLeft: '2em',
   fontSize: '1.25em',
 }
 
+const spanStyle = {
+  paddingRight: '1.5em',
+}
+
 const Header = () => (
   <div style={headerStyle}>
-    <Link to="/" style={{ paddingRight: '1.5em' }}><strong>IET</strong></Link>
-    <Link to="/about/" style={{ paddingRight: '1.5em' }}>About</Link>
-    <Link to="/projects/" style={{ paddingRight: '1.5em' }}>Projects</Link>
-    <Link to="/blog/" style={{ paddingRight: '1.5em' }}>Blog</Link>
-    <Link to="/contact/" style={{ paddingRight: '.5em' }}>Contact</Link>
+    <span style={spanStyle}><Link to="/"><strong>IET</strong></Link></span>
+    <span style={spanStyle}><Link to="/about/" >About</Link></span>
+    <span style={spanStyle}><Link to="/projects/">Projects</Link></span>
+    <span style={spanStyle}><Link to="/blog/">Blog</Link></span>
+    <span style={spanStyle}><Link to="/contact/">Contact</Link></span>
   </div>
 )
 

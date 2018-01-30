@@ -6,40 +6,55 @@ import github from '../img/github-circle.svg'
 import link from '../img/open-in-new.svg'
 
 const borderColors = {
-    '1. Idea': 'rgba(142, 78, 142, 0.75)',
-    '2. Planning': 'rgba(100, 149, 237, 0.75)',
-    '3. Development': 'rgba(248, 255, 50, 0.75)',
-    '4. Launching soon': 'rgba(255, 159, 5, 0.75)',
-    '5. Production': 'rgba(29, 155, 52, 0.75)',
+  '1. Idea': '#8c56bb',
+  '2. Planning': '#5599ff',
+  '3. Development': '#ff9955',
+  '4. Launching soon': '#3bd7ab',
+  '5. Production': '#278b7e',
 }
 
 const boxStyle = {
-    height: '225px', 
-    width: '275px', 
-    margin: '.5em', 
-    padding: '.5em', 
-    backgroundColor: '#eee',
+  height: '250px', 
+  width: '300px', 
+  margin: '.5em', 
+  padding: '.5em', 
+  backgroundColor: '#eee',
+  display: 'flex',
+  flexDirection: 'column',
+  minHeight: 100,
+}
+
+const boxMainStyle = {
+  flex: '1 0 auto',
 }
 
 const iconStyle = {
-    width: '25px',
-    marginRight: '.25em',
+  width: '25px',
+  marginRight: '.25em',
 }
 
 const ProjectBox = ({ project }) => (
-    <div style={{ ...boxStyle, borderLeft: `.5em solid ${borderColors[project.Status]}` }}>
-        <h4 style={{marginBottom: '.5em'}}>{project.Name}</h4>
-        <p style={{marginBottom: '.25em'}}>
-            {project.Website ? <a href={project.Website}><img src={link} style={iconStyle} /></a> : ''}
-            {project.GitHub ? <a href={project.GitHub}><img src={github} style={iconStyle} /></a> : ''}
-        </p>
-        <span style={{display: 'inline-block'}}>{project.Description}</span>
-        <p style={{position: 'relative', bottom: '0px', fontWeight: 'bold', verticalAlign: 'bottom'}}>Stage: {_.split(project.Status, '. ', 2).slice(1)}</p>
+  <div style={{ ...boxStyle, borderLeft: `.5em solid ${borderColors[project.Status]}` }}>
+    <div style={boxMainStyle}>
+      <h4 style={{ marginBottom: '.5em' }}>{project.Name}</h4>
+      <p style={{ marginBottom: '.25em' }}>
+        { project.Website ? <a href={project.Website}><img src={link} style={iconStyle} /></a> : '' }
+        { project.GitHub ? <a href={project.GitHub}><img src={github} style={iconStyle} /></a> : '' }
+      </p>
+      <span>{project.Description}</span>
     </div>
+    <div>
+      <p style={{ marginBottom: '.25em', }}>
+        { project.Tools ? 'Tools: ' + _.join(project.Tools, ', ') : '' }
+        <br />
+        { 'Stage: ' + _.split(project.Status, '. ', 2).slice(1) }
+      </p>
+    </div>
+  </div>
 )
 
 ProjectBox.propTypes = {
-    project: PropTypes.object,
+  project: PropTypes.object,
 }
 
 export default ProjectBox
