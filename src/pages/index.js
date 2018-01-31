@@ -12,10 +12,10 @@ const IndexPage = ({ data }) => (
     <img src={ietLogo} alt="iet" style={{ float: 'right', height: '12em' }} />
     <div style={{ fontSize: '1.25em' }}>
       <p>We build web tools at the City of Detroit.</p>
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-        Vestibulum toror quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero 
-        sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      <p>Read about <a href='./about'>our team and who we are.</a></p>
+      <p>Here's <a href='./projects'>a list of projects</a> we're working on.</p>
+      <p>We occasionally <a href='./blog'>write blogs about open data and our projects</a>.</p>
+      <p>Finally, if you've got an idea or question, <a href='./contact'>get in touch with us!</a></p>
     </div>
     <FeaturedProjects projects={data.allAirtable.edges} />
     <br />
