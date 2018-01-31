@@ -9,7 +9,7 @@ const About = ({ data }) => {
       name: 'Jimmy McBroom', 
       title: 'GIS Analyst', 
       github: 'https://github.com/jmcbroom',
-      blurb: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+      blurb: "Jimmy started working with spatial data while studying planning & was hooked on programming when he made his first interactive web map. Before joining IET in November 2016, he made maps and analyses for SEMCOG, scraped data for Loveland Technologies, and solicited responses for the 2010 U.S. Census.",
       color: '#ff9955',
     },
     {
