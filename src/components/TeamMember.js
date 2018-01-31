@@ -2,15 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const boxStyle = {
-  height: '225px',
-  width: '275px',
   margin: '.5em',
-  padding: '.5em',
-  backgroundColor: '#eee',
+  paddingLeft: '.5em',
 }
 
 const TeamMember = ({ person }) => (
-  <div style={boxStyle}>
+  <div style={{ ...boxStyle, borderLeft: `.5em solid ${person.color}` }}>
     <h4>{person.name}
       <br />
       <span style={{ fontSize: '.8em' }}>— {person.title}</span>

@@ -11,9 +11,9 @@ const IndexPage = ({ data }) => (
     <h1>Office of Innovation & Emerging Technology</h1>
     <img src={ietLogo} alt="iet" style={{ float: 'right', height: '12em' }} />
     <div style={{ fontSize: '1.25em' }}>
-      <p>We build web apps at the City of Detroit.</p>
+      <p>We build web tools at the City of Detroit.</p>
       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-        Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero 
+        Vestibulum toror quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero 
         sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
     </div>

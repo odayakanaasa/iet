@@ -8,27 +8,31 @@ const About = ({ data }) => {
     { 
       name: 'Jimmy McBroom', 
       title: 'GIS Analyst', 
-      github: 'https://github.com/jmcbroom', 
-      blurb: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+      github: 'https://github.com/jmcbroom',
+      blurb: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+      color: '#ff9955',
     },
     {
       name: 'Juan Carlos Angeles', 
       title: 'Front-end Web Developer', 
       github: '', 
-      blurb: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+      blurb: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+      color: '#3bd7ab',
     },
     {
       name: 'Jessica McInchak', 
       title: 'Backend Web Developer', 
       github: 'https://github.com/jessicamcinchak', 
-      blurb: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
+      blurb: "Jessica has been building things on the web and doing open data research projects in Detroit for five years and counting. Before joining IET in January 2017, she developed strategies for equitable open data with the Detroit Community Technology Project, built news apps for public radio, and cofounded the Detroit Ledger, a grant data collection effort to illustrate Detroit's philanthropic landscape.", 
+      color: '#278b7e',
     },
     {
       name: 'Mike Evans', 
-      title: 'Internet of Things Developer', 
-      github: '', 
-      blurb: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.'
-    }
+      title: 'Internet of Things Developer',
+      github: '',
+      blurb: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+      color: '#8c56bb',
+    },
   ]
 
   return (
@@ -47,7 +51,7 @@ const About = ({ data }) => {
       <p>Have an idea, project pitch, or just want to say hello?
         Email us at <a href="mailto:iet@detroitmi.gov">iet@detroitmi.gov</a>.</p>
       <h3>Our team</h3>
-      <div style={{ display: 'flex', flexWrap: 'wrap', marginBottom: '1em', }}>
+      <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap', marginBottom: '1em', }}>
         {us.map((you, i) => (
           <TeamMember person={you} key={i} />
         ))}
@@ -55,7 +59,7 @@ const About = ({ data }) => {
       <h3>History</h3>
       <p>The Office of Innovation & Emerging Technology (IET) was established in 2015 under the Department of Innovation & Technology's restructuring plan.
         Around the same time, the mayor of the City of Detroit signed into law Detroit's first open data policy: <a href="https://data.detroitmi.gov/about"> Government Open Data Access To 
-        All (GO DATA) orExecutive Order 2015-2</a>. This policy deemed all City information open by default. That commitment to transparency shaped 
+        All (GO DATA) or Executive Order 2015-2</a>. This policy deemed all City information open by default. That commitment to transparency shaped 
         how IET would prioritize working in the open and sharing our code, methods, and ideas along the way.</p>
       <p>Our current team came together in 2017. Detroit's Chief Innovation Officer (CIO) Beth Niblock acts as our 
         interim director. We appreciate these past team members:</p>
