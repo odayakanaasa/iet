@@ -6,14 +6,14 @@ import ProjectBox from './ProjectBox'
 
 const containerStyle = {
   paddingLeft: '1em',
-  borderLeft: 'solid .25em #333',
+  borderLeft: 'solid .25em #123e3f',
   fontSize: '1em',
 }
 
 const FeaturedProjects = ({ projects }) => (
   <div style={containerStyle}>
     <h2>Project highlights:</h2>
-    <div style={{display: 'flex', flexWrap: 'wrap'}}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', }}>
       {projects.map(({ node }, i) =>
         <ProjectBox key={i} project={node} />
       )}

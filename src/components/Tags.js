@@ -19,9 +19,11 @@ const Tags = ({ pathContext }) => {
           {post.map(({ i, id, frontmatter, fields }) => {
             return (
               <li key={id + i}>
-                <Link to={fields.slug}>
-                  <h3>{frontmatter.title}{" "}<span style={{ color: '#a2a2a2' }}>— {frontmatter.date}</span></h3>
-                </Link>
+                <h3>
+                  <Link to={fields.slug}>
+                    {frontmatter.title}{" "}<span style={{ color: '#a2a2a2' }}>— {frontmatter.date}</span>
+                  </Link>
+                </h3>
               </li>
             )
           })}

@@ -8,8 +8,8 @@ bootstrapTheme.overrideThemeStyles = (options) => ({
     color: 'black',
   },
   'a:hover': {
-    textDecoration: 'underline',
-    textDecorationColor: 'magenta',
+    textDecoration: 'none',
+    borderBottom: '.1em solid #d4af37',
   },
 })
 
