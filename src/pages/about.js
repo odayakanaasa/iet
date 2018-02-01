@@ -13,24 +13,24 @@ const About = ({ data }) => {
       color: '#ff9955',
     },
     {
-      name: 'Juan Carlos Angeles', 
-      title: 'Front-end Web Developer', 
-      github: '', 
-      blurb: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
-      color: '#3bd7ab',
-    },
-    {
       name: 'Jessica McInchak', 
       title: 'Backend Web Developer', 
       github: 'https://github.com/jessicamcinchak', 
-      blurb: "Jessica has been building things on the web and doing open data research projects in Detroit for five years and counting. Before joining IET in January 2017, she developed strategies for equitable open data with the Detroit Community Technology Project, built news apps for public radio, and cofounded the Detroit Ledger, a grant data collection effort to illustrate Detroit's philanthropic landscape.", 
+      blurb: "Jessica has been building things on the web and doing open data research projects in Detroit for five years and counting. Before joining IET in January 2017, she built news apps for public radio, developed strategies for equitable open data with the Detroit Community Technology Project, and cofounded the Detroit Ledger, a grant data collection effort to illustrate Detroit's philanthropic landscape.", 
+      color: '#3bd7ab',
+    },
+    {
+      name: 'Juan Carlos Angeles', 
+      title: 'Front-end Web Developer', 
+      github: '', 
+      blurb: '',
       color: '#278b7e',
     },
     {
       name: 'Mike Evans', 
       title: 'Internet of Things Developer',
       github: '',
-      blurb: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+      blurb: '',
       color: '#8c56bb',
     },
   ]
