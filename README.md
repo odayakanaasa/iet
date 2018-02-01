@@ -1,6 +1,6 @@
 # IET
 
-A simple website & blog to share with the Internet what our team is up to.
+A simple website & blog to share with the Internet what our team is up to. We write about open data and civic tech tools.
 
 It's built with [Gatsby](https://www.gatsbyjs.org/), a static site generator for [React](https://reactjs.org/) & [GraphQL](http://graphql.org/).
 
@@ -8,11 +8,13 @@ We track our projects in [Airtable](https://airtable.com/), and use the `gatsby-
 
 # Install
 
-You'll need [Node.js](https://nodejs.org/en/) with NPM first.
+You'll need [Node.js](https://nodejs.org/en/) with NPM or [Yarn](https://yarnpkg.com/en/) first.
 
 Install Gatsby's command line tools globally:
 
 `npm install --global gatsby-cli`
+
+Then, clone this site and install dependencies.
 
 # Usage
 
@@ -47,7 +49,7 @@ It queries the metadata you defined in `gatsby-config.js` and returns a data obj
 }
 ```
 
-## Make a blog post
+## Add a blog post
 
 We write blog posts in markdown and automatically generate pages from them using Gatsby's Node API.
 
@@ -67,3 +69,15 @@ Body text starts here.
 Enter down to make a new paragraph.
 
 ```
+
+## Deploy
+
+Run `npm run deploy` or `yarn deploy`.
+
+Either will trigger `gatsby build` and then publish the site to `gh-pages`.
+
+# Credits
+
+The IET logo is designed by [Juan Carlos](https://github.com/juancatothe).
+
+The icons are sourced from [Material Design Icons](https://materialdesignicons.com/).
