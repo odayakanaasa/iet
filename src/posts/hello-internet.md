@@ -8,7 +8,7 @@ Hey there, we're IET.
 
 IET is a team of programmers in the Department of Innovation and Technology (DoIT) at the [City of Detroit](http://www.detroitmi.gov/).
 
-We partner with City departments to build digital tools that solve information challenges. Our projects aim to simplify internal work flows and make data more accessible to residents.
+We partner with City departments to build digital tools that solve civic problems and information challenges. We manage Detroit’s [open data program](https://data.detroitmi.gov) and a portfolio of open-source projects that range from interactive maps to text and voice apps. Our work aims to simplify internal workflows, make data more accessible to residents, and help our City government be more responsive and connected.
 
 IET stands for Innovation & Emerging Technology for now, but we're on a new year's mission to swap out "innovation" with something less buzzy. Say hello and drop ideas at [iet@detroitmi.gov](mailto:iet@detroitmi.gov).
 
@@ -25,6 +25,8 @@ We also built our first few apps, which notably included:
   - Demo Alerts is an SMS tool to share if, when and where demolitions are planned to occur near an address you care about and lead safe health tips
 - [zoom-nineteen](https://github.com/CityOfDetroit/zoom-nineteen)
   - This map breaks a lot of design rules and came together too quickly, but keeps reminding us that departments are eager to layer *all* the data and visualize City programs block-by-block, or affectionately at `{ 'zoom': 19 }`
+
+Something we didn't do so well in our first year was share what we built and how we did it beyond our close colleagues and Github READMEs, but this website and blog are our resolution to change that.
 
 ### How we work today
 
@@ -44,7 +46,7 @@ Contributions in the form of feature requests, bug reports and code patches are 
 
 You can expect to read about:
 
-- __Open data changelogs__: monthly updates and revisions for https://data.detroitmi.gov 
+- __Open data changelogs__: monthly updates and revisions for [data.detroitmi.gov](https://data.detroitmi.gov) 
 - __Project launches__: posts about tools or apps that we've built and how you can use them
 - __Code snippets__: technical tips, tricks, and cool things we're learning
 - __Team updates__: reflections and occasional job opportunities

@@ -14,7 +14,7 @@ const Tags = ({ pathContext }) => {
     return (
       <div>
         <h1>Tags</h1>
-        <p>{post.length} blog post{post.length === 1 ? "" : "s"} tagged <span style={{ backgroundColor: '#eee', padding: '.5em'}}>{tag}</span>:</p>
+        <p>{post.length} blog post{post.length === 1 ? "" : "s"} tagged <span style={{ backgroundColor: '#dcbf5e', padding: '.5em'}}><strong>{tag}</strong></span>:</p>
         <ul>
           {post.map(({ i, id, frontmatter, fields }) => {
             return (
